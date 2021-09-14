@@ -25,6 +25,11 @@ setup the github repository-
 4. its bad practice to commit package-lock.json so to ignore it
    git restore --staged <file>
 5. git commit
-   git commit -m "initial commit of components"
+   git commit -m "initial commit of components", git status,
 
 git config --global user.email "shruthi.anugowda@gmail.com", git config --global user.name "ShruthiHanuGowda", git status, git commit -m "basic commit of our config", git status
+
+Make test-
+
+1. create header.test.js file
+   tests like - rendering without error,
