@@ -21,6 +21,10 @@ setup the github repository-
 2. Make new branch instead of commiting to main branch in github directly.  
    git checkout -b testingComponents
 3. Lets make an initial commit to github
-   git status, git add\*
+   git status, git add\*, git status
+4. its bad practice to commit package-lock.json so to ignore it
+   git restore --staged <file>
+5. git commit
+   git commit -m "initial commit of components"
 
 git config --global user.email "shruthi.anugowda@gmail.com", git config --global user.name "ShruthiHanuGowda", git status, git commit -m "basic commit of our config", git status
