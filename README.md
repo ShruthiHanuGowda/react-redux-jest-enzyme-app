@@ -16,6 +16,11 @@ setup enzyme config file - setupTests.js
 install node-sass for using scss files
 
 setup the github repository-
-install git, git init, git status, git add \*, gi
 
-install git, git add ., git config --global user.email "shruthi.anugowda@gmail.com", git config --global user.name "ShruthiHanuGowda", git status, git commit -m "basic commit of our config", git status
+1. install git, git init, git status, git add \*, git status,
+2. Make new branch instead of commiting to main branch in github directly.  
+   git checkout -b testingComponents
+3. Lets make an initial commit to github
+   git status, git add\*
+
+git config --global user.email "shruthi.anugowda@gmail.com", git config --global user.name "ShruthiHanuGowda", git status, git commit -m "basic commit of our config", git status

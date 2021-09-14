@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Header from "./component/header/index";
+import "./app.scss";
 
 export class App extends Component {
   render() {
