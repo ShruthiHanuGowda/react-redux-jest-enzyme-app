@@ -14,6 +14,7 @@ Note
 npm i --save-dev enzyme enzyme-adapter-react-16 jest jest-enzyme
 setup enzyme config file - setupTests.js
 install node-sass for using scss files
+use google fonts - and include link in the index file
 
 setup the github repository-
 
@@ -33,3 +34,5 @@ Make test-
 
 1. create header.test.js file
    tests like - rendering without error,
+
+note: to watch all the tests click w for watch and then select a to run all the tests
