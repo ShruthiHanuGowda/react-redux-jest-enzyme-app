@@ -3,7 +3,9 @@ import { shallow } from "enzyme";
 import Headline from "./index";
 
 //importing utility function as i know i need it for this testing
-import { findByTestAtrr } from "./../../utils";
+import { findByTestAtrr, checkProps } from "./../../utils";
+
+//this file has testing components
 
 //creating setup shallow rendered component
 const setUp = (props = {}) => {
@@ -13,6 +15,27 @@ const setUp = (props = {}) => {
 
 //nested describe test
 describe("Headline Component", () => {
+  describe("Checking PropTypes", () => {
+    it("Should not throw a warning", () => {
+      const expectedProps = {
+        header: "Test Header",
+        desc: "Test Desc",
+        tempArr: [
+          {
+            fName: "Test fName",
+            lName: "Test lName",
+            age: 23,
+            onlineStatus: false,
+          },
+        ],
+      };
+
+      const propsErr = checkProps(Headline, expectedProps);
+
+      expect(propsErr).toBeUndefined();
+    });
+  });
+
   describe("Have props", () => {
     // eslint-disable-next-line no-unused-vars
     let wrapper;

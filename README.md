@@ -27,12 +27,18 @@ setup the github repository-
    git restore --staged <file>
 5. git commit
    git commit -m "initial commit of components", git status,
+6. git commit to working branch repository
+   git push origin working-branch-name
 
 git config --global user.email "shruthi.anugowda@gmail.com", git config --global user.name "ShruthiHanuGowda", git status, git commit -m "basic commit of our config", git status
 
 Make test-
 
-1. create header.test.js file
+1. Testing components
+   create header.test.js file
    tests like - rendering without error,
-
-note: to watch all the tests click w for watch and then select a to run all the tests
+2. Testing prop types
+   //because its important to validate the data-types of props which we passing to our component
+   install npm prop-types
+   note: to watch all the tests click w for watch and then select a to run all the tests
+   install check-prop-types - suitable for checking propTypes in unit tests than mocking console.error
