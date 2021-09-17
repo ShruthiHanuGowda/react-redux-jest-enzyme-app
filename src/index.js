@@ -5,6 +5,7 @@ import { Provider } from "react-redux";
 import { store } from "./createStore";
 
 ReactDOM.render(
+  //wrapping whole app provider for redux with store
   <Provider store={store}>
     <App />
   </Provider>,
