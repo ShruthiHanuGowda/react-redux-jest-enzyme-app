@@ -5,7 +5,7 @@ import Headline from "./index";
 //importing utility function as i know i need it for this testing
 import { findByTestAtrr, checkProps } from "./../../utils";
 
-//this file has testing components
+//this file has testing components for class based
 
 //creating setup shallow rendered component
 const setUp = (props = {}) => {

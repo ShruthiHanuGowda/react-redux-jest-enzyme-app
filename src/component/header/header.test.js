@@ -3,7 +3,7 @@ import { shallow } from "enzyme";
 import Header from "./index";
 import { findByTestAtrr } from "./../../utils";
 
-//this file has testing components
+//this file has testing components with functional component
 const setUp = (props = {}) => {
   const component = shallow(<Header {...props} />);
   return component;

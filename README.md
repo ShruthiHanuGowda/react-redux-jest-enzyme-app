@@ -42,3 +42,9 @@ Make test-
    install npm prop-types
    note: to watch all the tests click w for watch and then select a to run all the tests
    install check-prop-types - suitable for checking propTypes in unit tests than mocking console.error
+3. Testing redux components
+   install redux react-redux redux-thunk
+   create reducer folder and its files
+   create createStore file
+   wrap the app (index file) with provider from react-redux and pass the store from createStore
+   import redux thunk to createstore.js

@@ -5,7 +5,7 @@ import Headline from "./component/headline/index";
 
 const tempArr = [
   {
-    fName: 1,
+    fName: "shruthi",
     lName: "Gowda",
     age: 30,
     onlineStatus: true,
