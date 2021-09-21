@@ -48,3 +48,10 @@ Make test-
    create createStore file
    wrap the app (index file) with provider from react-redux and pass the store from createStore
    import redux thunk to createstore.js
+4. Integration testing - testing unit with external dependencies - actioncreator
+   install axios to create asynchronous API request - npm i axios
+   note: action creator is dispatching our action and then our store is getting updated correctly (redux)
+
+   we want to create test store, and we want to check store that it is updated correctly once we ran our integration test
+   integration test do not involve testing like components so create seperate folder called \_integrationTests
+   //To test we use dependency called moxios - npm i --save-dev moxios

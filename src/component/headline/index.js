@@ -19,6 +19,7 @@ class Headline extends Component {
   }
 }
 
+//defining types for props
 Headline.propTypes = {
   header: PropTypes.string,
   desc: PropTypes.string,
