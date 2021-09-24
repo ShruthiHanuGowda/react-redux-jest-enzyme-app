@@ -59,7 +59,8 @@ Make test-
 5. Testing connected components
    App.js has connected components and also redux setup
    make app.test.js file
-   mock the store and dive into the connected components
+   mock the redux store and dive into the connected components
+6. Simulate Events - ex button
 
 note:
 to view versions: npm view react-redux versions
