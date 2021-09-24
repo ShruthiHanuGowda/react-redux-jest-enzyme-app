@@ -55,3 +55,11 @@ Make test-
    we want to create test store, and we want to check store that it is updated correctly once we ran our integration test
    integration test do not involve testing like components so create seperate folder called \_integrationTests
    //To test we use dependency called moxios - npm i --save-dev moxios
+
+5. Testing connected components
+   App.js has connected components and also redux setup
+   make app.test.js file
+   mock the store and dive into the connected components
+
+note:
+to view versions: npm view react-redux versions
