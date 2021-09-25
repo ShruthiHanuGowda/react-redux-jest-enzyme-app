@@ -16,20 +16,40 @@ const tempArr = [
   },
 ];
 
+const initialState = {
+  hideBtn: false,
+};
+
 class App extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      ...initialState,
+    };
     this.fetch = this.fetch.bind(this);
   }
 
   //we want to dispatch this fetch method when its called
+  //this is where we dispatch the action
   fetch() {
     this.props.fetchPosts();
+    this.exampleMethod_updateState();
+  }
+
+  exampleMethod_updateState() {
+    const { hideBtn } = this.state;
+    this.setState({
+      hideBtn: !hideBtn,
+    });
+  }
+
+  exampleMethod_returnsAValue(number) {
+    return number + 1;
   }
 
   render() {
     const { posts } = this.props;
-
+    const { hideBtn } = this.state;
     const configButton = {
       buttonText: "Get posts",
       emitEvent: this.fetch,
@@ -44,7 +64,8 @@ class App extends Component {
             desc="Click the lesson to render the posts"
             tempArr={tempArr}
           />
-          <SharedButton {...configButton} />
+          {!hideBtn && <SharedButton {...configButton} />}
+
           {posts.length > 0 && (
             <div>
               {posts.map((post, index) => {

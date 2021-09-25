@@ -60,7 +60,10 @@ Make test-
    App.js has connected components and also redux setup
    make app.test.js file
    mock the redux store and dive into the connected components
-6. Simulate Events - ex button
+6. Simulate Events - example button
+7. Testing on methods
+   first create instance of that class
+   test for state value and also test on returning value
 
 note:
 to view versions: npm view react-redux versions
