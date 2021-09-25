@@ -64,6 +64,7 @@ Make test-
 7. Testing on methods
    first create instance of that class
    test for state value and also test on returning value
+8. git hooks: pre-push (use library called husky)
 
 note:
 to view versions: npm view react-redux versions
