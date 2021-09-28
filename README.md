@@ -51,11 +51,8 @@ Make test-
 4. Integration testing - testing unit with external dependencies - actioncreator
    install axios to create asynchronous API request - npm i axios
    note: action creator is dispatching our action and then our store is getting updated correctly (redux)
-
-   we want to create test store, and we want to check store that it is updated correctly once we ran our integration test
-   integration test do not involve testing like components so create seperate folder called \_integrationTests
+   we want to create test store, and we want to check store that it is updated correctly once we ran our integration test. integration test do not involve testing like components so create seperate folder called \_integrationTests
    //To test we use dependency called moxios - npm i --save-dev moxios
-
 5. Testing connected components
    App.js has connected components and also redux setup
    make app.test.js file
@@ -65,6 +62,7 @@ Make test-
    first create instance of that class
    test for state value and also test on returning value
 8. git hooks: pre-push (use library called husky)
-
-note:
-to view versions: npm view react-redux versions
+   Fix Your Mistakes, Don't Commit Them! Pre-Commit Git Hook Checks with Husky and Lint Staged
+   npm i husky lint-staged -D
+   note:
+   to view versions: npm view react-redux versions
