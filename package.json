@@ -20,14 +20,12 @@
     "eject": "react-scripts eject",
     "prepare": "husky install"
   },
-
-  "husky":{
-    "hooks":{
+  "husky": {
+    "hooks": {
       "pre-commit": "npm run test",
       "pre-push": "npm run test"
     }
   },
-                                                                                                                      
   "eslintConfig": {
     "extends": "react-app"
   },
