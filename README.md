@@ -64,3 +64,5 @@ Make test-
 8. git hooks: pre-push (use library called husky)
    Fix Your Mistakes, Don't Commit Them! Pre-Commit Git Hook Checks with Husky and Lint Staged
    1.install husky, husky hook inside package.json, add pre-commit , prepush file inside husky config folder
+9. To merge the changes from branch to master branch
+   git checkout master, git pull origin master, git merge testBranch, git push origin master
