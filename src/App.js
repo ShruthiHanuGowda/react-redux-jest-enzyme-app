@@ -44,7 +44,7 @@ class App extends Component {
   }
 
   exampleMethod_returnsAValue(number) {
-    return number + 4;
+    return number + 1;
   }
 
   render() {

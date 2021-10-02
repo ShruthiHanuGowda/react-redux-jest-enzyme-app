@@ -16,21 +16,16 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "cross-env CI=true react-scripts test",
     "eject": "react-scripts eject",
     "prepare": "husky install"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm test",
-      "pre-push": "npm test"
-    }
-  },
   "eslintConfig": {
     "extends": "react-app"
-  },
+  },    
   "devDependencies": {
     "check-prop-types": "^1.1.2",
+    "cross-env": "^7.0.3",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.7.1",
     "husky": "^7.0.2",
