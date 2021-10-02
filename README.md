@@ -63,6 +63,4 @@ Make test-
    test for state value and also test on returning value
 8. git hooks: pre-push (use library called husky)
    Fix Your Mistakes, Don't Commit Them! Pre-Commit Git Hook Checks with Husky and Lint Staged
-   npm i husky lint-staged -D
-   note:
-   to view versions: npm view react-redux versions
+   1.install husky, husky hook inside package.json, add pre-commit , prepush file inside husky config folder

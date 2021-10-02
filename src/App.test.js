@@ -56,6 +56,6 @@ describe("app component", () => {
     //create instance of that class
     const classInstance = wrapper.instance();
     const newValue = classInstance.exampleMethod_returnsAValue(1);
-    expect(newValue).toBe(1);
+    expect(newValue).toBe(2);
   });
 });
